@@ -2,29 +2,23 @@
 
 // Section 1: if and if-else on numbers (Q1–20)
 
-// Q1. Read an integer and print whether it is positive, negative or zero, and also whether it is even or odd (zero counts as even).
+// Q2. Read two integers and print the larger one. If both are equal, print "Both are equal" instead.
 
 #include<stdio.h>
 int main(){
-    int x;
+    int x,y;
     printf("Enter value of x: ");
     scanf("%d",&x);
-    if(x==0) printf("Integer enter by user is 0.");
-    else if(x>0){
-        if(x%2==0){
-            printf("Positive and even integer.");
-        }
-        else{
-            printf("Positive and odd integer.");
-        }
+     printf("Enter value of y: ");
+    scanf("%d",&y);
+    if(x>y){
+        printf("Larger number is ",x);
+    }
+    else if(x==y){
+        printf("Both number is eqyal to each other.");
     }
     else{
-        if(x%2==0){
-            printf("Negative and even integer.");
-        }
-        else{
-            printf("Nedative and odd integer.");
-        }
+        printf("Larger number is ",y);
     }
 
     return 0;
